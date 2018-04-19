@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/index.css">
+</head>
+<body>
+    <div id="game">
+        <canvas id="canvas" width="800" height="250"></canvas>
+    </div>
+    <script src="./lib/common.js"></script>
+    <script src="./lib/index.js"></script>
+    <script src="./lib/AABB.js"></script>
+    <script src="./lib/floor.js"></script>
+    <script src="./lib/cacti.js"></script>
+    <script src="./lib/cloud.js"></script>
+    <script src="./lib/bullet.js"></script>
+    <script src="./lib/trex.js"></script>
+    <script src="./lib/boss.js"></script>
+    <script src="./lib/game.js"></script>  
+    <script>
+        window.onload = function () {
+            ctx.drawImage(logo,
+                0, 0, 442, 94,
+                180, 40, 442 ,94
+            );
+
+            ctx.drawImage(kaishi,
+                0, 0, 442, 94,
+                220, 130, 442 ,94
+            );
+            ctx.save();
+            ctx.font="20px Verdana";
+            ctx.fillText("X: 攻击   C: 跳跃   左箭头: 后退   右箭头: 前进", 190, 210);
+            ctx.restore();
+        };
+    </script>
+</body>
+</html>
